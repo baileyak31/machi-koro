@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/machi-koro/static/css/main.3e8074db.chunk.css",
+    "main.js": "/machi-koro/static/js/main.1c301936.chunk.js",
+    "main.js.map": "/machi-koro/static/js/main.1c301936.chunk.js.map",
+    "runtime-main.js": "/machi-koro/static/js/runtime-main.feb2d336.js",
+    "runtime-main.js.map": "/machi-koro/static/js/runtime-main.feb2d336.js.map",
+    "static/js/2.39f2e50c.chunk.js": "/machi-koro/static/js/2.39f2e50c.chunk.js",
+    "static/js/2.39f2e50c.chunk.js.map": "/machi-koro/static/js/2.39f2e50c.chunk.js.map",
+    "index.html": "/machi-koro/index.html",
+    "precache-manifest.744d80cb993c439117841fd74a0d65e5.js": "/machi-koro/precache-manifest.744d80cb993c439117841fd74a0d65e5.js",
+    "service-worker.js": "/machi-koro/service-worker.js",
+    "static/css/main.3e8074db.chunk.css.map": "/machi-koro/static/css/main.3e8074db.chunk.css.map",
+    "static/js/2.39f2e50c.chunk.js.LICENSE.txt": "/machi-koro/static/js/2.39f2e50c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.feb2d336.js",
+    "static/js/2.39f2e50c.chunk.js",
+    "static/css/main.3e8074db.chunk.css",
+    "static/js/main.1c301936.chunk.js"
+  ]
+}

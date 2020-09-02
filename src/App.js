@@ -10,21 +10,23 @@ import {
 } from 'react-router-dom';
 
 export const App = () => {
+  const routePrefix = '/machi-koro';
+
   return (
     <>
       <Router>
         <div>
           <Switch>
-            <Route path='/not-found'>
-              <GameNotFound />
+            <Route path={`${routePrefix}/not-found`}>
+              <GameNotFound routePrefix={routePrefix} />
             </Route>
-            <Route path='/game/:roomId'>
-              <GameRoom />
+            <Route path={`${routePrefix}/game/:roomId`}>
+              <GameRoom routePrefix={routePrefix} />
             </Route>
-            <Route path='/home'>
-              <Home />
+            <Route path={`${routePrefix}/home`}>
+              <Home routePrefix={routePrefix} />
             </Route>
-            <Redirect to='/home' />
+            <Redirect to={`${routePrefix}/home`} />
           </Switch>
         </div>
       </Router>

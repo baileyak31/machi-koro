@@ -6,7 +6,7 @@ import {
 } from '../api';
 import { Link, useHistory } from 'react-router-dom';
 
-export const Home = () => {
+export const Home = ({ routePrefix }) => {
   const [roomId, setRoomId] = useState('');
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export const Home = () => {
   const launchGameRoom = (roomId) => {
     console.log('launchGameRoom called');
     console.log(`joining room ${roomId}`);
-    history.push(`/game/${roomId}`);
+    history.push(`${routePrefix}/game/${roomId}`);
   };
 
   const onRoomIdChange = (event) => {
@@ -44,7 +44,7 @@ export const Home = () => {
         onChange={onRoomIdChange}
         placeholder='Enter game ID...'
       />
-      <Link to={`/game/${roomId}`}>
+      <Link to={`${routePrefix}/game/${roomId}`}>
         <button>Submit</button>
       </Link>
       <h2>Create New Game</h2>

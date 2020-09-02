@@ -16,7 +16,7 @@ import {
 import { Redirect, useParams, Link } from 'react-router-dom';
 import { getPlayerNumberFromIndex } from '../utils';
 
-export const GameRoom = () => {
+export const GameRoom = ({ routePrefix }) => {
   const { roomId } = useParams();
   const [winner, setWinner] = useState(-1);
   const [thisPlayerIndex, setThisPlayerIndex] = useState(0);
@@ -80,7 +80,7 @@ export const GameRoom = () => {
   const winnerDeclared = winner >= 0;
 
   return gameNotFound ? (
-    <Redirect to='/not-found' />
+    <Redirect to={`${routePrefix}/not-found`} />
   ) : gameInProgress ? (
     <Game
       thisPlayerIndex={thisPlayerIndex}
@@ -109,7 +109,7 @@ export const GameRoom = () => {
           <button onClick={onStartGameClick}>Start Game</button>
         </div>
       )}
-      <Link to='/home'>
+      <Link to={`${routePrefix}/home`}>
         <button className='homeButton' onClick={onGoHomeClick}>
           Go to Home
         </button>

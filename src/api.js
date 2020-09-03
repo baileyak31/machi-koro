@@ -1,8 +1,10 @@
-import openSocket from 'socket.io-client';
+//import openSocket from 'socket.io-client';
+import io from 'socket.io-client';
 
 //const port = 2000;
 // Change this to http://localhost:${port} for testing
-const socket = openSocket('https://machi-koro-server.herokuapp.com');
+//const socket = openSocket('https://machi-koro-server.herokuapp.com');
+const socket = io();
 
 const emitStartGame = (roomId) => {
   socket.emit('start game', roomId);

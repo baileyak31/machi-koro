@@ -36,7 +36,7 @@ export const Home = ({ routePrefix }) => {
 
   return (
     <>
-      <h1>Welcome to Machi Koro!</h1>
+      <h1>Test!</h1>
       <h2>Join Game</h2>
       <input
         type='text'
